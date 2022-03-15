@@ -3,7 +3,7 @@
 
 
 int main(int argc, char *argv[]){
-	char letter;
+	unsigned char letter;
 	char onlyCode;
 	for(int i = 1; i < argc; i++){
 		if(argv[i][0] != '-'){
