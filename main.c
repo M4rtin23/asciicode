@@ -6,7 +6,7 @@ int main(int argc, char *argv[]){
 	unsigned char letter;
 	char onlyCode;
 	for(int i = 1; i < argc; i++){
-		if(argv[i][0] != '-'){
+		if(argv[i][0] != '-' && letter == 0){
 			letter = argv[i][0];			
 		}else{
 			switch(argv[i][1]){
