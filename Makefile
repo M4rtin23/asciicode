@@ -1,3 +1,13 @@
-all:
+all: asciicode
+
+asciicode: main.c
 	gcc main.c -o asciicode
-	mv asciicode /usr/local/bin
+
+install: all
+	cp asciicode /usr/local/bin
+
+uninstall:
+	rm -f /usr/local/bin/asciicode
+
+clean:
+	rm -f asciicode
