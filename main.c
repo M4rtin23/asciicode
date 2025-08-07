@@ -1,6 +1,4 @@
 #include<stdio.h>
-#include <stdlib.h> //For program termination after help
-
 
 int main(int argc, char *argv[]){
 	unsigned char letter;
@@ -16,7 +14,7 @@ int main(int argc, char *argv[]){
 
 				case 'h':
 					printf("Usage:\n\t-h:\tshows this message.\n\t-n:\tprints only the ascii code\n\t-d:\tprints the default message\n");
-					exit(0);
+					return 0;
 					break;
 
 				case 'd':
